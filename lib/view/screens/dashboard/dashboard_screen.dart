@@ -128,14 +128,35 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   child: Padding(
                     padding: EdgeInsets.all(Dimensions.PADDING_SIZE_EXTRA_SMALL),
                     child: Row(children: [
-                      BottomNavItem(iconData: Icons.home, isSelected: _pageIndex == 0, onTap: () => _setPage(0)),
-                      BottomNavItem(iconData: Icons.favorite, isSelected: _pageIndex == 1, onTap: () => _setPage(1)),
-                      Expanded(child: SizedBox()),
-                      BottomNavItem(iconData: Icons.shopping_bag, isSelected: _pageIndex == 3, onTap: () => _setPage(3)),
-                      BottomNavItem(iconData: Icons.menu, isSelected: _pageIndex == 4, onTap: () {
-                        Get.bottomSheet(MenuScreen(), backgroundColor: Colors.transparent, isScrollControlled: true);
-                      }),
-                    ]),
+                          BottomNavItem(
+                            iconData: Icons.home,
+                            isSelected: _pageIndex == 0,
+                            onTap: () => _setPage(0),
+                            textTitle: "Home",
+                          ),
+                          BottomNavItem(
+                            iconData: Icons.favorite,
+                            isSelected: _pageIndex == 1,
+                            onTap: () => _setPage(1),
+                            textTitle: "Favorite",
+                          ),
+                          Expanded(child: SizedBox()),
+                          BottomNavItem(
+                            iconData: Icons.shopping_bag,
+                            isSelected: _pageIndex == 3,
+                            onTap: () => _setPage(3),
+                            textTitle: "My Orders",
+                          ),
+                          BottomNavItem(
+                              iconData: Icons.menu,
+                              isSelected: _pageIndex == 4,
+                              textTitle: "Menu",
+                              onTap: () {
+                                Get.bottomSheet(MenuScreen(),
+                                    backgroundColor: Colors.transparent,
+                                    isScrollControlled: true);
+                              }),
+                        ]),
                   ),
                 ),
             body: ExpandableBottomSheet(
