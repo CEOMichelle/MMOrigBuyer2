@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "796333058872",
+    "project_id": "mastermovers-ae543",
+    "storage_bucket": "mastermovers-ae543.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796333058872:android:e6c033774e1ddf8ffb6fcd",
+        "android_client_info": {
+          "package_name": "com.mastermovers.buyer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796333058872-9uhltgqqdmek5bfmi82m3dmibhefle1i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mastermovers.buyer",
+            "certificate_hash": "e3d38074602e63599d5b8748d8017a157aeb8c38"
+          }
+        },
+        {
+          "client_id": "796333058872-htoof21o1vlj2uuo55k3jl18lcfio6fn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXcArXFMlBMAirtsBe_dDLXpQhT7vLDzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796333058872-htoof21o1vlj2uuo55k3jl18lcfio6fn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
